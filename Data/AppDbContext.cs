@@ -12,5 +12,6 @@ namespace StudentNotesApi.Data
         public DbSet<Student> Students => Set<Student>();
         public DbSet<Subject> Subjects => Set<Subject>();
         public DbSet<Note> Notes => Set<Note>();
+        public DbSet<AppUser> Users => Set<AppUser>();
     }
 }
