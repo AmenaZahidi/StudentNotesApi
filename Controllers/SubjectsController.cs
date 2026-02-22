@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using StudentNotesApi.Data;
 using StudentNotesApi.Dtos;
@@ -8,6 +9,7 @@ namespace StudentNotesApi.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize]
     public class SubjectsController : ControllerBase
     {
         private readonly AppDbContext _db;

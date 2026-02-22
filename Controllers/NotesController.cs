@@ -3,11 +3,14 @@ using Microsoft.EntityFrameworkCore;
 using StudentNotesApi.Data;
 using StudentNotesApi.Dtos;
 using StudentNotesApi.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace StudentNotesApi.Controllers
 {
+
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize]
     public class NotesController : ControllerBase
     {
         private readonly AppDbContext _db;

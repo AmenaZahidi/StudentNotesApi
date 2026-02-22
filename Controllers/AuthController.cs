@@ -10,6 +10,7 @@ using System.Text;
 
 namespace StudentNotesApi.Controllers
 {
+
     [ApiController]
     [Route("api/[controller]")]
     public class AuthController : ControllerBase
